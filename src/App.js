@@ -1,7 +1,12 @@
 import React from 'react'
+import Header from './comopnents/header'
 
 function App() {
-  return <div>1111</div>
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 export default App
