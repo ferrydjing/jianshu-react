@@ -95,7 +95,17 @@ export const InputWrap = styled.div`
     text-align: center;
     line-height: 30px;
     color: #969696;
+    border-radius: 50%;
     transform: translateY(-50%);
+  }
+  &.focused {
+    input {
+      width: 320px;
+    }
+    .iconfont {
+      color: #fff;
+      background: #969696;
+    }
   }
 `
 
@@ -104,7 +114,7 @@ export const Input = styled.input.attrs({
 })`
   margin-top: 8px;
   padding: 0 40px 0 20px;
-  width: 160px;
+  width: 240px;
   height: 40px;
   border: none;
   font-size: 15px;
@@ -116,5 +126,15 @@ export const Input = styled.input.attrs({
   &::placeholder {
     font-size: 14px;
     color: #666;
+  }
+  &.slider-enter,
+  &.slider-exit {
+    transition: all 0.2s ease-out;
+  }
+  &.slier-enter-active {
+    width: 320px;
+  }
+  &.slider-exit-active {
+    width: 240px;
   }
 `
